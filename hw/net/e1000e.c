@@ -1,5 +1,5 @@
 /*
-* QEMU INTEL 82574 GbE NIC emulation
+* QEMU INTEL 82574 GbE NIC emulation, HACKED!
 *
 * Software developer's manuals:
 * http://www.intel.com/content/dam/doc/datasheet/82574l-gbe-controller-datasheet.pdf
@@ -669,7 +669,7 @@ static void e1000e_class_init(ObjectClass *class, void *data)
     c->class_id = PCI_CLASS_NETWORK_ETHERNET;
     c->is_express = 1;
 
-    dc->desc = "Intel 82574L GbE Controller";
+    dc->desc = "Intel 82574L GbE Controller HACKED!";
     dc->reset = e1000e_qdev_reset;
     dc->vmsd = &e1000e_vmstate;
     dc->props = e1000e_properties;
